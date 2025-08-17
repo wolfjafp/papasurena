@@ -7,21 +7,23 @@
   <meta name="description" content="Papa Sureña en Los Muermos (Puerto Montt). Venta mayorista y minorista de Papa Patagonia por saco. Productor directo del sur: calidad, precio justo y entrega confiable.">
   <meta name="keywords" content="Papa Patagonia, venta de papas, papas por saco, mayorista, minorista, productor de papas, Los Muermos, Puerto Montt, comprar papas, proveedor de papas, papas del sur">
   <meta name="author" content="Papa Sureña">
-  <link rel="canonical" href="https://papasureña.cl/">
+  <link rel="canonical" href="https://www.papasureña.cl/">
+  <link rel="alternate" hreflang="es-cl" href="https://www.papasureña.cl/">
+  <link rel="alternate" hreflang="x-default" href="https://www.papasureña.cl/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Papa Sureña • Venta de papas por saco | Productor del sur">
   <meta property="og:description" content="Papa Patagonia directo del productor. Venta por saco en Los Muermos (Puerto Montt). Calidad y precio justo. Cotiza por WhatsApp.">
-  <meta property="og:url" content="https://papasureña.cl/">
-  <meta property="og:image" content="images/03.jpg">
+  <meta property="og:url" content="https://www.papasureña.cl/">
+  <meta property="og:image" content="https://www.papasureña.cl/images/03.jpg">
   <meta property="og:locale" content="es_CL">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Papa Sureña • Venta de papas por saco">
   <meta name="twitter:description" content="Papa Patagonia del sur directo del productor. Cotiza por WhatsApp.">
-  <meta name="twitter:image" content="images/03.jpg">
+  <meta name="twitter:image" content="https://www.papasureña.cl/images/03.jpg">
 
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preload" as="image" href="images/03.jpg" fetchpriority="high">
@@ -34,9 +36,9 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Papa Sureña",
-    "url": "https://papasureña.cl/",
+    "url": "https://www.papasureña.cl/",
     "description": "Venta mayorista y minorista de Papa Patagonia por saco. Productor directo en Los Muermos, Puerto Montt.",
-    "image": "images/03.jpg",
+    "image": "https://www.papasureña.cl/images/03.jpg",
     "areaServed": "Chile",
     "telephone": "+56 9 5897 9618",
     "sameAs": []
@@ -277,25 +279,48 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-grid">
-      <div>
-        <a class="logo" href="#inicio">
-          <img src="favicon.svg" alt="Logo Papa Sureña" width="28" height="28"> Papa Sureña
-        </a>
-        <p>Productor de <strong>Papa Patagonia</strong> por saco. Calidad del sur directo a tu negocio.</p>
-        <p class="form-note">Los Muermos, Puerto Montt • Entrega y retiro coordinados</p>
-        <p><a href="tel:+56958979618" class="btn btn--ghost" style="margin-top:.6rem">Llamar +56 9 5897 9618</a></p>
+  <footer class="site-footer site-footer--dark" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__blocks">
+        <section class="footer__brand" aria-label="Acerca de Papa Sureña">
+          <a class="logo" href="#inicio">
+            <img src="favicon.svg" alt="Logo Papa Sureña" width="28" height="28">
+            <span>Papa Sureña</span>
+          </a>
+          <p>Productor directo de <strong>Papa Patagonia</strong> por saco. Calidad, precio justo y coordinación por WhatsApp.</p>
+          <ul class="footer__actions" role="list">
+            <li><a class="btn" href="#contacto">Cotizar por WhatsApp</a></li>
+            <li><a class="btn btn--ghost" href="tel:+56958979618">Llamar +56 9 5897 9618</a></li>
+          </ul>
+          <p class="footer__meta">Los Muermos, Puerto Montt · Boleta/Factura · Entrega o retiro coordinado</p>
+        </section>
+
+        <nav class="footer__nav" aria-label="Secciones">
+          <h3 class="footer__title">Secciones</h3>
+          <ul role="list">
+            <li><a href="#como">Cómo comprar</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#formatos">Formatos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <section class="footer__contact" aria-label="Contacto">
+          <h3 class="footer__title">Contacto</h3>
+          <ul class="footer__list" role="list">
+            <li><a href="tel:+56958979618">+56 9 5897 9618</a></li>
+            <li><a href="mailto:contacto@papasureña.cl">contacto@papasureña.cl</a></li>
+            <li>Los Muermos, Puerto Montt</li>
+          </ul>
+        </section>
       </div>
-      <nav aria-label="Footer">
-        <a href="#como">Cómo comprar</a>
-        <a href="#formatos">Formatos</a>
-        <a href="#galeria">Galería</a>
-        <a href="#faq">FAQs</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
+
+      <div class="footer__legal">
+        <p>© <span id="y">2025</span> Papa Sureña. Todos los derechos reservados.</p>
+      </div>
     </div>
-    <p class="legal">  Papa Sureña. Todos los derechos reservados.</p>
   </footer>
 
   <!-- Lightbox -->
