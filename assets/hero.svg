@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600'>
+  <defs>
+    <linearGradient id='sky' x1='0' x2='0' y1='0' y2='1'>
+      <stop offset='0' stop-color='#f7f2e8'/>
+      <stop offset='1' stop-color='#efe6d6'/>
+    </linearGradient>
+    <linearGradient id='soil' x1='0' x2='0' y1='0' y2='1'>
+      <stop offset='0' stop-color='#8b5e34'/>
+      <stop offset='1' stop-color='#6b4525'/>
+    </linearGradient>
+    <linearGradient id='sack' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0' stop-color='#c79a6a'/>
+      <stop offset='1' stop-color='#a87b4a'/>
+    </linearGradient>
+    <linearGradient id='potato' x1='0' x2='1' y1='0' y2='1'>
+      <stop offset='0' stop-color='#d9b07a'/>
+      <stop offset='1' stop-color='#b88954'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='600' fill='url(#sky)'/>
+  <g transform='translate(0,420)'>
+    <rect width='1200' height='180' fill='url(#soil)'/>
+    <path d='M0 40 Q150 0 300 40 T600 40 T900 40 T1200 40 V180 H0 Z' fill='rgba(0,0,0,0.1)'/>
+  </g>
+  <g transform='translate(240,240)'>
+    <ellipse cx='160' cy='200' rx='170' ry='26' fill='rgba(0,0,0,.12)'/>
+    <path d='M40 40 C20 100 20 200 60 230 C120 280 240 280 280 230 C320 180 320 80 300 40 C260 0 100 0 40 40 Z' fill='url(#sack)' stroke='#8f6a43' stroke-width='3' />
+    <path d='M60 62 C58 84 300 80 298 60' fill='none' stroke='#7b5839' stroke-width='6' stroke-linecap='round'/>
+    <g>
+      <ellipse cx='110' cy='150' rx='38' ry='30' fill='url(#potato)' stroke='#805a35'/>
+      <circle cx='100' cy='150' r='3' fill='#805a35'/>
+      <circle cx='118' cy='160' r='3' fill='#805a35'/>
+    </g>
+    <g>
+      <ellipse cx='170' cy='170' rx='40' ry='32' fill='url(#potato)' stroke='#805a35'/>
+      <circle cx='160' cy='170' r='3' fill='#805a35'/>
+      <circle cx='180' cy='178' r='3' fill='#805a35'/>
+    </g>
+    <g>
+      <ellipse cx='220' cy='145' rx='34' ry='28' fill='url(#potato)' stroke='#805a35'/>
+      <circle cx='212' cy='146' r='3' fill='#805a35'/>
+      <circle cx='228' cy='152' r='3' fill='#805a35'/>
+    </g>
+  </g>
+  <g transform='translate(820,180)'>
+    <rect x='0' y='0' width='300' height='140' rx='18' fill='#1d1a17' opacity='.75'/>
+    <text x='20' y='46' font-family='Segoe UI, Roboto, Arial' font-size='28' fill='#F2C14E' font-weight='700'>Papa Sureña</text>
+    <text x='20' y='84' font-family='Segoe UI, Roboto, Arial' font-size='18' fill='#e8d8c8'>Productor mayorista</text>
+    <text x='20' y='110' font-family='Segoe UI, Roboto, Arial' font-size='16' fill='#c8b39d'>Papas por saco • Sur</text>
+  </g>
+</svg>
