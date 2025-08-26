@@ -69,7 +69,7 @@
     navClose && navClose.addEventListener('click', closeNav);
     navBackdrop && navBackdrop.addEventListener('click', closeNav);
     primaryNav.addEventListener('click', (e)=>{
-      if(e.target.closest('a')){ closeNav(); }
+      if(e.target.closest('.nav__link')){ closeNav(); }
     });
     window.addEventListener('resize', ()=>{
       if(window.innerWidth > 920){ closeNav(); }
@@ -142,29 +142,35 @@
     };
     type();
   })();
-  const form = document.getElementById('contactForm');
-  if(!form) return;
+  // Smooth scroll helper for nav links
+  document.querySelectorAll('.nav a, .footer-links a, .logo').forEach(a => {
+    a.addEventListener('click', () => {
+      // This script enhances the native browser navigation, which is handled by CSS `scroll-behavior: smooth`.
+      // It does NOT prevent the default link behavior.
 
-    // Smooth scroll helper for in-page CTA links
-    document.querySelectorAll('a[data-scroll-target]').forEach(a=>{
-      a.addEventListener('click', (e)=>{
-        const sel = a.getAttribute('data-scroll-target');
-        if(!sel) return;
-        const target = document.querySelector(sel);
-        if(target){
-          e.preventDefault();
-          target.scrollIntoView({behavior:'smooth',block:'start'});
-          // focus first input in form after scrolling
-          setTimeout(()=>{
+      // 1. Close the mobile navigation if it's open.
+      if (document.body.classList.contains('nav-open')) {
+        closeNav();
+      }
+
+      // 2. If the link is to the contact form, focus the first input after a short delay
+      //    to allow the browser's smooth scroll to complete.
+      const href = a.getAttribute('href');
+      if (href === '#contacto') {
+        setTimeout(() => {
+          const target = document.querySelector(href);
+          if (target) {
             const first = target.querySelector('input,textarea,select,button');
-            if(first) first.focus({preventScroll:true});
-          }, 650);
-        }
-      });
+            if (first) first.focus({ preventScroll: true });
+          }
+        }, 700); // Delay to wait for scroll to finish
+      }
     });
+  });
 
   const PHONE = '56958979618'; // Chile: +56 9 5897 9618 (para wa.me sin + ni espacios)
 
+  const form = document.getElementById('contactForm');
   form?.addEventListener('submit', (e)=>{
     e.preventDefault();
     const fd = new FormData(form);
@@ -202,16 +208,16 @@
   const lbPrev = lightboxEl ? lightboxEl.querySelector('.lightbox__prev') : null;
   const lbNext = lightboxEl ? lightboxEl.querySelector('.lightbox__next') : null;
 
-  // read media items from markup; .mitem elements are now interactive buttons with data-index
-  const mitems = Array.from(document.querySelectorAll('.media-masonry .mitem'));
+  // read media items from markup; .mitem elements are now interactive
+  const mitems = Array.from(document.querySelectorAll('.gallery-collage .mitem'));
   const mediaList = mitems.map(it=>{
     const img = it.querySelector('img');
-    const vid = it.querySelector('video');
-    if(img) return {type:'img', src:img.currentSrc || img.src, alt:img.alt||''};
-    if(vid){
-      const srcEl = vid.querySelector('source');
-      return {type:'video', src: (srcEl && srcEl.src) || vid.currentSrc || '', poster: vid.getAttribute('poster')||''};
+    // The video is now represented by a figure with a poster image
+    const isVideo = it.classList.contains('video');
+    if (isVideo) {
+      return {type:'video', src: 'images/video01.mp4', poster: img.src, alt: img.alt || ''};
     }
+    if(img) return {type:'img', src:img.src, alt:img.alt||''};
     return null;
   }).filter(Boolean);
 
@@ -264,7 +270,7 @@
   function next(){ if(current < mediaList.length-1) openLightbox(current+1); else openLightbox(0); }
   function prev(){ if(current > 0) openLightbox(current-1); else openLightbox(mediaList.length-1); }
 
-  // attach interactions (click + keyboard) to new .mitem buttons
+  // attach interactions (click + keyboard) to new .mitem elements
   mitems.forEach((it, idx)=>{
     it.setAttribute('role','button');
     it.setAttribute('tabindex', '0');
