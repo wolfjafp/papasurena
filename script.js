@@ -560,7 +560,9 @@ class PapaSurenaApp {
 
     // === GALLERY FUNCTIONALITY === //
     setupGallery() {
-        this.galleryImages = ['images/01.jpeg', 'images/03.jpg', 'images/05.jpeg'];
+        // Get gallery images dynamically from HTML
+        const galleryItems = document.querySelectorAll('.gallery-item img[data-full]');
+        this.galleryImages = Array.from(galleryItems).map(img => img.dataset.full);
         this.currentImageIndex = 0;
         
         // Gallery item clicks
@@ -616,11 +618,17 @@ class PapaSurenaApp {
     }
     
     openGalleryModal(imageIndex) {
+        // Validate image index
+        if (imageIndex < 0 || imageIndex >= this.galleryImages.length) {
+            console.warn('Invalid image index:', imageIndex);
+            return;
+        }
+        
         this.currentImageIndex = imageIndex;
         const modal = document.getElementById('gallery-modal');
         const modalImage = document.getElementById('modal-image');
         
-        if (modal && modalImage) {
+        if (modal && modalImage && this.galleryImages[imageIndex]) {
             modalImage.src = this.galleryImages[imageIndex];
             modalImage.alt = `Papa Patagonia - Imagen ${imageIndex + 1}`;
             
@@ -668,7 +676,7 @@ class PapaSurenaApp {
     updateModalImage() {
         const modalImage = document.getElementById('modal-image');
         
-        if (modalImage) {
+        if (modalImage && this.galleryImages[this.currentImageIndex]) {
             // Fade effect
             modalImage.style.opacity = '0';
             
@@ -676,6 +684,12 @@ class PapaSurenaApp {
                 modalImage.src = this.galleryImages[this.currentImageIndex];
                 modalImage.alt = `Papa Patagonia - Imagen ${this.currentImageIndex + 1}`;
                 modalImage.style.opacity = '1';
+                
+                // Handle image load error
+                modalImage.onerror = () => {
+                    console.warn('Failed to load image:', this.galleryImages[this.currentImageIndex]);
+                    modalImage.style.opacity = '1';
+                };
             }, 150);
         }
     }
