@@ -24,6 +24,7 @@ class PapaSurenaApp {
         this.setupAnimations();
         this.setupGallery();
         this.setupPrivacyBanner();
+        this.setupFloatingWhatsApp();
     }
 
     setupEventListeners() {
@@ -677,6 +678,66 @@ class PapaSurenaApp {
                 modalImage.style.opacity = '1';
             }, 150);
         }
+    }
+
+    // === FLOATING WHATSAPP === //
+    setupFloatingWhatsApp() {
+        const floatButton = document.querySelector('.whatsapp-float-btn');
+        
+        if (floatButton) {
+            // Track clicks on floating WhatsApp button
+            floatButton.addEventListener('click', () => {
+                this.trackEvent('whatsapp_float_click', {
+                    source: 'floating_button',
+                    timestamp: new Date().toISOString(),
+                    page_section: this.getCurrentSection()
+                });
+            });
+
+            // Show/hide based on scroll position
+            this.setupFloatingButtonVisibility();
+        }
+    }
+
+    setupFloatingButtonVisibility() {
+        const floatContainer = document.getElementById('whatsapp-float');
+        let lastScrollTop = 0;
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const isScrollingDown = scrollTop > lastScrollTop;
+            const shouldShow = scrollTop > 300; // Show after scrolling 300px
+            
+            if (floatContainer) {
+                if (shouldShow) {
+                    floatContainer.style.opacity = '1';
+                    floatContainer.style.visibility = 'visible';
+                    floatContainer.style.transform = isScrollingDown ? 'translateY(0)' : 'translateY(0) scale(1.05)';
+                } else {
+                    floatContainer.style.opacity = '0.7';
+                }
+            }
+            
+            lastScrollTop = scrollTop;
+        }, { passive: true });
+    }
+
+    getCurrentSection() {
+        const sections = ['inicio', 'productos', 'calidad', 'galeria', 'contacto'];
+        const scrollPosition = window.scrollY + 100;
+        
+        for (const sectionId of sections) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    return sectionId;
+                }
+            }
+        }
+        return 'unknown';
     }
 
     // === PRIVACY BANNER & MODAL === //
