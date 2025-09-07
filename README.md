@@ -195,9 +195,9 @@ git push origin main
 
 ## 📞 Información de Contacto
 
-- **WhatsApp**: +56 9 1234 5678
-- **Email**: info@papapatagonia.cl
-- **Ubicación**: Patagonia, Chile
+- **WhatsApp**: +56 9 5897 9618
+- **Email**: joparedes.na@gmail.com
+- **Ubicación**: Los Muermos, Puerto Montt
 - **Sitio Web**: En desarrollo
 
 ## 🔄 Changelog

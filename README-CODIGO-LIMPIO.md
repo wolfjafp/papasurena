@@ -196,9 +196,9 @@ papasurena/
 
 ## 📞 Contacto
 
-- **WhatsApp**: +56912345678
-- **Email**: contacto@papapatagonia.cl
-- **Ubicación**: Patagonia, Chile
+- **WhatsApp**: +56958979618
+- **Email**: joparedes.na@gmail.com
+- **Ubicación**: Los Muermos, Puerto Montt
 
 ---
 

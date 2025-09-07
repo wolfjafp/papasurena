@@ -431,9 +431,9 @@ class PapaSurenaApp {
     }
 
     openWhatsApp() {
-        const phoneNumber = '+56912345678'; // Replace with actual number
+        const phoneNumber = '+56958979618'; // Número real actualizado
         const message = encodeURIComponent(
-            '¡Hola Papa Sureña! Me interesa conocer más sobre sus productos agrícolas. ¿Podrían brindarme más información?'
+            '¡Hola Papa Patagonia! Me interesa conocer más sobre sus productos agrícolas. ¿Podrían brindarme más información?'
         );
         
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
