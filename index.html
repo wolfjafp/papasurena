@@ -1,198 +1,430 @@
-<!doctype html>
-<html lang="es-CL">
-  <head>
-    <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="content-language" content="es-CL">
-  <meta name="geo.region" content="CL">
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-  <title>Papa Sureña — Papas certificadas | Compra directo al productor</title>
-  <link rel="canonical" href="/">
-  <link rel="alternate" hreflang="es-CL" href="/">
-  <meta name="robots" content="index,follow">
-  <meta property="og:locale" content="es_CL">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@papasureuna">
-  <link rel="preload" as="image" href="images/03.jpg">
-    <meta name="description" content="Papas certificadas desde Los Muermos, Puerto Montt. Compra por saco al mejor precio directo del productor.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papa Patagonia - Papas Premium de Chile | Calidad Superior</title>
+    <meta name="description" content="Papa Patagonia ofrece las mejores papas premium de Chile. Cultivadas en la Patagonia con más de 50 años de tradición. Calidad superior, sabor excepcional y entrega directa del campo.">
+    <meta name="keywords" content="papa patagonia, papas premium chile, papas patagónicas, agricultura chile, papas calidad, papas gourmet, producción agrícola patagonia">
+    <meta name="author" content="Papa Patagonia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://papapatagonia.cl/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://papapatagonia.cl/">
+    <meta property="og:title" content="Papa Patagonia - Papas Premium de Chile">
+    <meta property="og:description" content="Las mejores papas premium de la Patagonia chilena. Más de 50 años de tradición familiar cultivando papas de calidad superior.">
+    <meta property="og:image" content="https://papapatagonia.cl/assets/og-cover.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CL">
+    <meta property="og:site_name" content="Papa Patagonia">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://papapatagonia.cl/">
+    <meta name="twitter:title" content="Papa Patagonia - Papas Premium de Chile">
+    <meta name="twitter:description" content="Las mejores papas premium de la Patagonia chilena. Más de 50 años de tradición familiar.">
+    <meta name="twitter:image" content="https://papapatagonia.cl/assets/og-cover.svg">
+    
+    <!-- Favicon -->
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg" sizes="32x32">
+    <link rel="apple-touch-icon" href="images/logo.jpeg">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
-    <meta name="theme-color" content="#fffbe9">
-    <meta property="og:title" content="Papa Sureña — Papas certificadas">
-  <meta property="og:description" content="Papas certificadas desde Los Muermos, Puerto Montt. Compra por saco al mejor precio directo del productor.">
-  <meta property="og:image" content="https://www.papasurena.cl/images/03.jpg">
-  <meta property="og:url" content="https://www.papasurena.cl/">
-  <meta property="og:type" content="website">
-  <meta name="twitter:image" content="https://www.papasurena.cl/images/03.jpg">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="images/01.jpeg" as="image">
+    <link rel="preload" href="images/logo.jpeg" as="image">
+    
+    <!-- Schema.org structured data -->
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"LocalBusiness",
-      "name":"Papa Sureña",
-      "telephone":"+56958979618",
-      "address":{
-        "@type":"PostalAddress",
-        "addressLocality":"Los Muermos",
-        "addressRegion":"Puerto Montt",
-        "addressCountry":"CL"
-      },
-      "areaServed": {"@type":"Country", "name":"Chile"},
-      "geo": {"@type":"GeoCoordinates","latitude":-41.45,"longitude":-73.47},
-      "url":"https://www.papasurena.cl/"
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Papa Patagonia",
+        "url": "https://papapatagonia.cl",
+        "logo": "https://papapatagonia.cl/images/logo.jpeg",
+        "description": "Empresa chilena especializada en la producción de papas premium de la Patagonia. Más de 50 años de tradición familiar.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL",
+            "addressRegion": "Patagonia"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+56-9-1234-5678",
+            "contactType": "customer service",
+            "availableLanguage": "Spanish"
+        },
+        "sameAs": [
+            "https://wa.me/56912345678"
+        ]
     }
     </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#inicio">Saltar al contenido</a>
-    <header class="site-header" role="banner">
-      <div class="container header-inner">
-          <a class="logo" href="#inicio" aria-label="Inicio Papa Sureña">
-          <img class="logo-img" src="images/logo.jpeg" alt="Papa Sureña" width="240" height="72">
-        </a>
-        <button class="nav-toggle" aria-label="Abrir menú" aria-controls="primary-nav" aria-expanded="false">
-          <span class="hamburger" aria-hidden="true"></span>
-        </button>
-        <nav id="primary-nav" class="nav" aria-label="Navegación principal">
-          <button class="nav__close" aria-label="Cerrar menú">×</button>
-          <ul class="nav__list" role="menubar">
-            <li role="none"><a href="#inicio" class="nav__link" role="menuitem">Inicio</a></li>
-            <li role="none"><a href="#beneficios" class="nav__link" role="menuitem">Beneficios</a></li>
-            <li role="none"><a href="#galeria" class="nav__link" role="menuitem">Galería</a></li>
-            <li role="none"><a href="#contacto" class="nav__link btn btn--ghost" role="menuitem">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="nav-backdrop" data-nav-backdrop tabindex="-1" aria-hidden="true"></div>
-      </div>
-    </header>
-
-    <main id="inicio">
-      <section class="hero hero--cover" aria-labelledby="hero-title">
-        <div class="hero__media" aria-hidden="true"></div>
-        <div class="hero__content container">
-          <h1 id="hero-title" class="hero-title">
-            <span class="hero-line hero-line--primary">PRODUCTORES DE PAPAS CERTIFICADAS</span>
-            <span class="hero-line hero-line--sub">comuna de Los Muermos, Puerto Montt</span>
-          </h1>
-          <p class="hero-sub">Nos dedicamos a la venta mayorista de papas de alta calidad. Como tu socio de confianza, garantizamos un servicio excepcional y productos que cumplen con las más altas exigencias de tu negocio.</p>
-          <div class="cta">
-            <a class="btn btn--primary" href="https://wa.me/56958979618?text=Hola%2C%20quiero%20cotizar%20papas%20certificadas.%20%C2%BFPodr%C3%ADan%20darme%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener noreferrer">
-              <!-- WhatsApp icon (simple) -->
-              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#fff" d="M20.52 3.48A11.9 11.9 0 0012 .5C6  .5 1.02 5.48 1 11.5c0 2.02.53 4 1.52 5.74L.08 23.5l6.53-2.07A11.93 11.93 0 0012 23.5c6 0 11.5-4.98 11.5-11.5 0-3.08-1.2-5.98-3.98-8.52zM12 21.5c-1.06 0-2.1-.18-3.06-.53l-.22-.08-3.9 1.22 1.32-3.8-.06-.22A9.01 9.01 0 013 11.5C3 6.8 6.8 3 11.5 3c2.44 0 4.72.96 6.43 2.7A8.98 8.98 0 0121.5 11.5C21.5 16.2 17.2 21.5 12 21.5zM17.1 14.7c-.3-.15-1.78-.87-2.06-.97-.28-.1-.48-.15-.68.15s-.78.97-.96 1.18c-.18.22-.36.25-.66.08-.3-.18-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.65-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.33.45-.5.15-.18.2-.3.3-.5.1-.2 0-.38-.02-.54-.02-.15-.68-1.63-.94-2.24-.25-.58-.5-.5-.66-.5-.17 0-.37 0-.57 0s-.5.07-.76.37c-.26.3-1 .98-1 2.4 0 1.42 1.03 2.8 1.18 2.99.15.2 2.04 3.12 4.95 4.37 2.82 1.2 2.82.8 3.33.74.5-.06 1.78-.72 2.03-1.42.25-.7.25-1.3.18-1.42-.07-.12-.27-.18-.57-.33z"/></svg>
-              Cotizar por WhatsApp
-            </a>
-          </div>
-        </div>
-        <div class="hero-effect" aria-hidden="true"></div>
-      </section>
-
-      <section id="beneficios" class="section section--center" aria-label="Beneficios de comprar aquí">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-          <h2 class="section-title">¿Por qué elegir Papa Sureña?</h2>
-          <div class="benefits-grid">
-            <article class="benefit">
-              <div class="benefit-icon">🥔</div>
-              <h3>Productor directo</h3>
-              <p>Sin intermediarios: mejor precio, trazabilidad y frescura al momento de la entrega.</p>
-            </article>
-            <article class="benefit">
-              <div class="benefit-icon">✅</div>
-              <h3>Papas certificadas</h3>
-              <p>Semillas y procesos controlados que garantizan calidad, sanidad y consistencia por lote.</p>
-            </article>
-            <article class="benefit">
-              <div class="benefit-icon">🌱</div>
-              <h3>Agricultura que impulsa oportunidades</h3>
-              <p>Tu compra apoya empleo local y el desarrollo de comunas rurales del sur.</p>
-            </article>
-          </div>
-          <div class="cta-benefits"><a class="btn btn--primary" href="#contacto">Quiero cotizar ahora</a></div>
-        </div>
-      </section>
-
-      <section id="contacto" class="section">
-        <div class="container">
-          <h2 class="section-title">Haz tu pedido fácil y rápido</h2>
-          <p class="muted">Completa el formulario o escríbenos por WhatsApp. Respuesta rápida y sin compromiso.</p>
-          <form id="contactForm" class="contact-form" novalidate>
-            <div class="form-grid">
-              <label class="field">
-                <span class="field-label">Nombre y apellido</span>
-                <input type="text" name="nombre" required autocomplete="name" placeholder="Ej: Juan Pérez">
-              </label>
-              <label class="field">
-                <span class="field-label">Teléfono (WhatsApp)</span>
-                <input type="tel" name="telefono" required inputmode="tel" placeholder="Ej: +56 9 1234 5678">
-              </label>
-              <label class="field">
-                <span class="field-label">Ciudad</span>
-                <input type="text" name="ciudad" placeholder="Ej: Puerto Montt">
-              </label>
-              <label class="field">
-                <span class="field-label">Cantidad (sacos)</span>
-                <input type="number" name="cantidad" min="1" step="1" placeholder="Ej: 20">
-              </label>
-              <label class="field field--full">
-                <span class="field-label">Mensaje</span>
-                <textarea name="mensaje" rows="4" placeholder="¿Qué necesitas? Ej: Entrega, tipo de papa, fecha"></textarea>
-              </label>
+            <div class="nav-brand">
+                <img src="images/logo.jpeg" alt="Papa Patagonia" class="logo">
             </div>
-            <div class="form-actions">
-              <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
-              <a class="btn btn--ghost" href="tel:+56958979618">Llamar ahora</a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#calidad" class="nav-link">Calidad</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <a href="https://wa.me/56912345678" class="nav-whatsapp" target="_blank">
+                    WhatsApp
+                </a>
             </div>
-            <p class="form-note">Sin compromiso. Te respondemos rápido y coordinamos tu pedido.</p>
-          </form>
         </div>
-      </section>
+    </nav>
 
-      <section id="galeria" class="section section--alt">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg">
+            <img src="images/01.jpeg" alt="Papa Patagonia Background" class="hero-image">
+        </div>
+        
         <div class="container">
-          <h2 class="section-title">Galería: Así llegan tus papas</h2>
-          <div class="gallery-collage">
-            <figure class="mitem mitem-1" data-index="0"><img loading="lazy" src="images/04.jpeg" alt="Campo de cultivo de papas en Los Muermos" width="800" height="600"></figure>
-            <figure class="mitem mitem-2" data-index="1"><img loading="lazy" src="images/02.jpeg" alt="Detalle de Papa Patagonia seleccionada" width="800" height="600"></figure>
-            <figure class="mitem mitem-3" data-index="2"><img loading="lazy" src="images/01.jpeg" alt="Sacos de Papa Patagonia listos para despacho" width="800" height="600"></figure>
-            <figure class="mitem mitem-4" data-index="3"><img loading="lazy" src="images/03.jpg" alt="Carga de sacos de Papa Patagonia en bodega" width="1200" height="800"></figure>
-            <figure class="mitem mitem-5" data-index="4"><img loading="lazy" src="images/05.jpeg" alt="Clasificación y empaque de Papa Patagonia" width="800" height="600"></figure>
-            <figure class="mitem mitem-6 video" data-index="5">
-              <img loading="lazy" src="images/03.jpg" alt="Video: carga y distribución de papas" width="1200" height="800">
-              <div class="play-icon" aria-hidden="true">▶</div>
-            </figure>
-          </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    🥔 Papa Patagonia Premium
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="highlight">Papa Patagonia</span><br>
+                    Premium de Chile
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Tradición patagónica, calidad superior y sabor excepcional directo del sur de Chile.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                    <a href="https://wa.me/56912345678" class="btn btn-secondary" target="_blank">
+                        WhatsApp Directo
+                    </a>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <footer class="site-footer" role="contentinfo">
-      <div class="container footer-inner">
-        <div class="footer-col">
-          <a class="logo footer-logo" href="#inicio"><img class="logo-img" src="images/logo.jpeg" alt="Papa Sureña"></a>
-          <p class="muted">Venta de papas certificadas directo del sur. Calidad y precio justo.</p>
-          <ul class="footer-actions"><li><a class="btn btn--primary" href="#contacto">Cotizar por WhatsApp</a></li><li><a class="btn btn--ghost" href="tel:+56958979618">Llamar +56 9 5897 9618</a></li></ul>
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Papa Patagonia Premium</h2>
+                <p>La mejor papa de Chile, cultivada en los suelos más puros de la Patagonia</p>
+            </div>
+            
+            <div class="product-showcase">
+                <div class="product-main">
+                    <div class="product-image-container">
+                        <img src="images/01.jpeg" alt="Papa Patagonia Premium" class="product-hero-image">
+                    </div>
+                    <div class="product-details">
+                        <h2>Papa Patagonia Premium</h2>
+                        <h3>La Papa Más Sabrosa de Chile</h3>
+                        <p class="product-description">
+                            Cultivadas en los suelos vírgenes de la Patagonia chilena, nuestras papas 
+                            ofrecen un sabor único y una textura excepcional que las distingue de cualquier otra.
+                        </p>
+                        
+                        <div class="product-highlights">
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🌱</span>
+                                <div class="highlight-text">
+                                    <h4>Origen Patagónico</h4>
+                                    <p>Cultivadas en suelos únicos del sur de Chile</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <span class="highlight-icon">⭐</span>
+                                <div class="highlight-text">
+                                    <h4>Calidad Premium</h4>
+                                    <p>Selección cuidadosa y control de calidad superior</p>
+                                </div>
+                            </div>
+                            
+                            <div class="highlight-item">
+                                <span class="highlight-icon">🚚</span>
+                                <div class="highlight-text">
+                                    <h4>Entrega Fresca</h4>
+                                    <p>Directo del campo a tu mesa en tiempo récord</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-cta">
+                            <a href="#contacto" class="btn btn-primary">Solicitar Cotización</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="footer-col">
-          <h4>Secciones</h4>
-          <ul class="footer-links"><li><a href="#beneficios">Beneficios</a></li><li><a href="#galeria">Galería</a></li><li><a href="#contacto">Contacto</a></li></ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul class="footer-links"><li><a href="tel:+56958979618">+56 9 5897 9618</a></li><li><a href="mailto:joparedes.na@gmail.com">joparedes.na@gmail.com</a></li><li>Los Muermos, Puerto Montt</li></ul>
-        </div>
-      </div>
-      <div class="footer-legal container"><p>© <span id="y">2025</span> Papa Sureña. Todos los derechos reservados.</p></div>
-    </footer>
+    </section>
 
-    <!-- Lightbox -->
-    <div id="lightbox" class="lightbox" aria-hidden="true" tabindex="-1">
-      <div class="lightbox__content"></div>
-      <button class="lightbox__close" aria-label="Cerrar">×</button>
-      <button class="lightbox__prev" aria-label="Anterior">‹</button>
-      <button class="lightbox__next" aria-label="Siguiente">›</button>
+    <!-- Quality Section -->
+    <section id="calidad" class="quality">
+        <div class="container">
+            <div class="quality-content">
+                <div class="quality-text">
+                    <h2>Tradición Patagónica</h2>
+                    <p>Más de 50 años cultivando las mejores papas en los suelos únicos de la Patagonia chilena. 
+                    Cada papa es el resultado de tradición familiar, técnicas sustentables y el clima privilegiado del sur de Chile.</p>
+                    
+                    <div class="quality-stats">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Años de Tradición</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Origen Patagónico</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Clientes Satisfechos</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="quality-image">
+                    <img src="images/03.jpg" alt="Papa Patagonia Calidad" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galería Papa Patagonia</h2>
+                <p>Descubre la belleza de nuestras papas premium y el proceso de cultivo patagónico</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/01.jpeg" alt="Papa Patagonia Premium - Cultivo" class="gallery-image" data-full="images/01.jpeg">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                        <div class="gallery-text">Ver imagen completa</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/03.jpg" alt="Papa Patagonia - Tradición" class="gallery-image" data-full="images/03.jpg">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                        <div class="gallery-text">Ver imagen completa</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/05.jpeg" alt="Papa Patagonia - Calidad" class="gallery-image" data-full="images/05.jpeg">
+                    <div class="gallery-overlay">
+                        <div class="gallery-icon">🔍</div>
+                        <div class="gallery-text">Ver imagen completa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para la galería -->
+    <div id="gallery-modal" class="gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close">&times;</span>
+            <img class="gallery-modal-image" id="modal-image" src="" alt="">
+            <div class="gallery-nav">
+                <button class="gallery-prev" id="gallery-prev">‹</button>
+                <button class="gallery-next" id="gallery-next">›</button>
+            </div>
+        </div>
     </div>
 
-    <script src="script.js" defer></script>
-  </body>
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>Estamos aquí para atenderte y resolver todas tus consultas</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/56912345678" target="_blank">+56 9 1234 5678</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:info@papapatagonia.cl">info@papapatagonia.cl</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Ubicación</h4>
+                            <p>Patagonia, Chile</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje *</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.jpeg" alt="Papa Patagonia" class="footer-logo">
+                    <h3>Papa Patagonia</h3>
+                    <p>Las mejores papas premium de la Patagonia chilena con más de 50 años de tradición familiar.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#calidad">Calidad</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>WhatsApp: +56 9 1234 5678</p>
+                    <p>Email: info@papapatagonia.cl</p>
+                    <p>Patagonia, Chile</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Papa Patagonia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Banner de Políticas de Privacidad - Ley Chilena -->
+    <div id="privacy-banner" class="privacy-banner">
+        <div class="privacy-content">
+            <div class="privacy-icon">🔒</div>
+            <div class="privacy-text">
+                <h4>Protección de Datos Personales</h4>
+                <p>Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="#" onclick="showPrivacyPolicy()">Política de Privacidad</a> y el uso de cookies según la Ley N° 19.628 de Chile.</p>
+            </div>
+            <div class="privacy-actions">
+                <button onclick="acceptPrivacyPolicy()" class="btn-accept">Aceptar</button>
+                <button onclick="hidePrivacyBanner()" class="btn-close">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Política de Privacidad -->
+    <div id="privacy-modal" class="privacy-modal">
+        <div class="privacy-modal-content">
+            <div class="privacy-modal-header">
+                <h3>Política de Privacidad y Cookies</h3>
+                <button onclick="closePrivacyModal()" class="privacy-modal-close">✕</button>
+            </div>
+            <div class="privacy-modal-body">
+                <h4>🇨🇱 Conforme a la Legislación Chilena</h4>
+                
+                <h5>1. Ley de Protección de Datos (Ley N° 19.628)</h5>
+                <p>Papa Patagonia respeta tu privacidad y protege tus datos personales conforme a la Ley N° 19.628 sobre Protección de la Vida Privada. Los datos que recopilas serán utilizados únicamente para:</p>
+                <ul>
+                    <li>Procesar consultas y cotizaciones</li>
+                    <li>Mejorar nuestros servicios</li>
+                    <li>Comunicarnos contigo sobre nuestros productos</li>
+                </ul>
+                
+                <h5>2. Uso de Cookies</h5>
+                <p>Utilizamos cookies técnicas y analíticas para:</p>
+                <ul>
+                    <li>Mejorar la funcionalidad del sitio web</li>
+                    <li>Analizar el tráfico y comportamiento de usuarios</li>
+                    <li>Personalizar tu experiencia de navegación</li>
+                </ul>
+                
+                <h5>3. Derechos del Titular</h5>
+                <p>Tienes derecho a:</p>
+                <ul>
+                    <li>Acceder a tus datos personales</li>
+                    <li>Rectificar información incorrecta</li>
+                    <li>Eliminar tus datos (derecho al olvido)</li>
+                    <li>Oponerte al tratamiento de datos</li>
+                </ul>
+                
+                <h5>4. Contacto</h5>
+                <p>Para ejercer tus derechos o consultas sobre privacidad, contáctanos:</p>
+                <p><strong>Email:</strong> privacidad@papapatagonia.cl<br>
+                <strong>WhatsApp:</strong> +56 9 1234 5678</p>
+                
+                <h5>5. Legislación Aplicable</h5>
+                <p>Esta política se rige por las leyes de Chile, especialmente la Ley N° 19.628 de Protección de la Vida Privada y sus modificaciones.</p>
+                
+                <p><small><strong>Última actualización:</strong> Septiembre 2024</small></p>
+            </div>
+            <div class="privacy-modal-footer">
+                <button onclick="acceptPrivacyPolicy()" class="btn btn-primary">Aceptar y Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
 </html>

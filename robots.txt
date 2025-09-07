@@ -1,3 +1,12 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.papasurena.cl/sitemap.xml
+
+# Sitemap
+Sitemap: https://papapatagonia.cl/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow sensitive areas
+Disallow: /assets/
+Disallow: /*.json$
